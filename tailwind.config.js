@@ -3,9 +3,18 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./layouts/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      Poppins: ["Poppins", "sans-serif"],
+    },
+    extend: {
+      colors: {
+        "-black": "#1C1919",
+        "-green": "#00B1A7",
+      },
+    },
   },
   plugins: [],
 };

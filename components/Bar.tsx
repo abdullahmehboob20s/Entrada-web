@@ -1,12 +1,16 @@
-import React from "react";
+import React, { LegacyRef } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 interface Props {
   title: string;
   subtitle: string;
+  prevButton?: LegacyRef<HTMLButtonElement> | undefined;
+  nextButton?: LegacyRef<HTMLButtonElement> | undefined;
 }
 
 function Bar(props: Props) {
+  console.log(props.prevButton);
+
   return (
     <header className="flex items-center justify-between">
       <div>
@@ -18,10 +22,16 @@ function Bar(props: Props) {
         </p>
       </div>
       <div className="flex space-x-4 items-center">
-        <button className="w-[50px] h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-blue flex items-center justify-center text-2xl 2xl:text-3xl -text-blue">
+        <button
+          ref={props.prevButton}
+          className="w-[50px] h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-blue flex items-center justify-center text-2xl 2xl:text-3xl -text-blue"
+        >
           <MdKeyboardArrowLeft />
         </button>
-        <button className="w-[50px] h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-green flex items-center justify-center text-2xl 2xl:text-3xl text-white -bg-green">
+        <button
+          ref={props.nextButton}
+          className="w-[50px] h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-green flex items-center justify-center text-2xl 2xl:text-3xl text-white -bg-green"
+        >
           <MdKeyboardArrowRight />
         </button>
       </div>

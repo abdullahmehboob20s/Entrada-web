@@ -55,3 +55,8 @@
     @apply content-[""] absolute w-[1px] right-0 top-[50%] translate-y-[-50%] h-full bg-[#707070] opacity-[.4];
   }
 }
+
+.swiper-slide {
+  overflow: visible;
+  padding-bottom: 0.5rem;
+}

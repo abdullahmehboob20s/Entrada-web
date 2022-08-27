@@ -1,6 +1,8 @@
 import Category from "layouts/Category";
+import Destinations from "layouts/Destinations";
 import Hero from "layouts/Hero";
 import Navbar from "layouts/Navbar";
+import Trending from "layouts/Trending";
 import React from "react";
 
 function index() {
@@ -12,6 +14,12 @@ function index() {
       </div>
       <div className="mb-100px">
         <Category />
+      </div>
+      <div className="mb-100px">
+        <Trending />
+      </div>
+      <div className="mb-100px">
+        <Destinations />
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import Category from "layouts/Category";
 import Destinations from "layouts/Destinations";
 import Hero from "layouts/Hero";
 import Navbar from "layouts/Navbar";
+import Partners from "layouts/Partners";
 import Subscribe from "layouts/Subscribe";
 import TourGuide from "layouts/TourGuide";
 import Trending from "layouts/Trending";
@@ -36,6 +37,9 @@ function Index() {
       </div>
       <div className="mb-150px">
         <Subscribe />
+      </div>
+      <div className="mb-150px">
+        <Partners />
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import BestSeller from "layouts/BestSeller";
 import Category from "layouts/Category";
 import Destinations from "layouts/Destinations";
 import Hero from "layouts/Hero";
@@ -20,6 +21,9 @@ function index() {
       </div>
       <div className="mb-100px">
         <Destinations />
+      </div>
+      <div className="mb-100px">
+        <BestSeller />
       </div>
     </div>
   );

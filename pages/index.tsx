@@ -1,4 +1,5 @@
 import BestSeller from "layouts/BestSeller";
+import BookNow from "layouts/BookNow";
 import Category from "layouts/Category";
 import Destinations from "layouts/Destinations";
 import Hero from "layouts/Hero";
@@ -7,7 +8,7 @@ import TourGuide from "layouts/TourGuide";
 import Trending from "layouts/Trending";
 import React from "react";
 
-function index() {
+function Index() {
   return (
     <div>
       <Navbar />
@@ -26,11 +27,14 @@ function index() {
       <div className="mb-100px">
         <BestSeller />
       </div>
-      <div className="mb-100px">
+      <div className="mb-150px">
         <TourGuide />
+      </div>
+      <div className="mb-100px">
+        <BookNow />
       </div>
     </div>
   );
 }
 
-export default index;
+export default Index;

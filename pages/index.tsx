@@ -4,6 +4,7 @@ import Category from "layouts/Category";
 import Destinations from "layouts/Destinations";
 import Hero from "layouts/Hero";
 import Navbar from "layouts/Navbar";
+import Subscribe from "layouts/Subscribe";
 import TourGuide from "layouts/TourGuide";
 import Trending from "layouts/Trending";
 import React from "react";
@@ -30,8 +31,11 @@ function Index() {
       <div className="mb-150px">
         <TourGuide />
       </div>
-      <div className="mb-100px">
+      <div className="mb-150px">
         <BookNow />
+      </div>
+      <div className="mb-150px">
+        <Subscribe />
       </div>
     </div>
   );

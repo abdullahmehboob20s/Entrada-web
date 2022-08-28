@@ -18,7 +18,7 @@ function Badge(props: Props) {
   const {
     bgColor = "#FEF2DE",
     textColor = "#F5A623",
-    position = { top: "top-5 2xl:top-8", left: "right-5 2xl:right-8" },
+    position = { top: "top-5 2xl:top-8", right: "right-5 2xl:right-8" },
   } = props;
 
   return (

@@ -46,9 +46,9 @@ function Index() {
       <div className="mb-150px">
         <Questions />
       </div>
-      {/* <div className="mb-8">
+      <div className="mb-8">
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 }

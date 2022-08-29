@@ -2,6 +2,16 @@ import Bar from "components/Bar";
 import BestSellerCard from "components/BestSellerCard";
 import React from "react";
 
+const CheckAll = () => {
+  return (
+    <div>
+      <button className="-bg-green rounded-full text-white py-3 px-6 2xl:py-6 2xl:px-10 text-base 2xl:text-2xl font-normal">
+        Check All
+      </button>
+    </div>
+  );
+};
+
 function BestSeller() {
   return (
     <div>
@@ -10,7 +20,10 @@ function BestSeller() {
           <Bar
             title="Best Seller"
             subtitle="Sost Brilliant reasons Entrada should be your one-stop-shop!"
-          />
+            showPrevAndNextButtons={false}
+          >
+            <CheckAll />
+          </Bar>
         </div>
 
         <div className="grid grid-cols-3 gap-[32px]">

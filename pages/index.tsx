@@ -2,6 +2,7 @@ import BestSeller from "layouts/BestSeller";
 import BookNow from "layouts/BookNow";
 import Category from "layouts/Category";
 import Destinations from "layouts/Destinations";
+import Footer from "layouts/Footer";
 import Hero from "layouts/Hero";
 import Navbar from "layouts/Navbar";
 import Partners from "layouts/Partners";
@@ -44,6 +45,9 @@ function Index() {
       </div>
       <div className="mb-150px">
         <Questions />
+      </div>
+      <div className="mb-8">
+        <Footer />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { LegacyRef } from "react";
+import React, { LegacyRef, ReactElement } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 interface Props {
@@ -6,11 +6,12 @@ interface Props {
   subtitle: string;
   prevButton?: LegacyRef<HTMLButtonElement> | undefined;
   nextButton?: LegacyRef<HTMLButtonElement> | undefined;
+  children?: JSX.Element | JSX.Element[];
+  showPrevAndNextButtons?: boolean;
 }
 
 function Bar(props: Props) {
-  console.log(props.prevButton);
-
+  const { showPrevAndNextButtons = true } = props;
   return (
     <header className="flex items-center justify-between">
       <div>
@@ -21,20 +22,24 @@ function Bar(props: Props) {
           {props.subtitle}
         </p>
       </div>
-      <div className="flex space-x-4 items-center">
-        <button
-          ref={props.prevButton}
-          className="w-[50px] h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-blue flex items-center justify-center text-2xl 2xl:text-3xl -text-blue"
-        >
-          <MdKeyboardArrowLeft />
-        </button>
-        <button
-          ref={props.nextButton}
-          className="w-[50px] h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-green flex items-center justify-center text-2xl 2xl:text-3xl text-white -bg-green"
-        >
-          <MdKeyboardArrowRight />
-        </button>
-      </div>
+      {props.children ? props.children : null}
+
+      {showPrevAndNextButtons ? (
+        <div className="flex space-x-4 items-center">
+          <button
+            ref={props.prevButton}
+            className="w-[50px] h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-blue flex items-center justify-center text-2xl 2xl:text-3xl -text-blue"
+          >
+            <MdKeyboardArrowLeft />
+          </button>
+          <button
+            ref={props.nextButton}
+            className="w-[50px] h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-green flex items-center justify-center text-2xl 2xl:text-3xl text-white -bg-green"
+          >
+            <MdKeyboardArrowRight />
+          </button>
+        </div>
+      ) : null}
     </header>
   );
 }

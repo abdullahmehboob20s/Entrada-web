@@ -11,7 +11,7 @@ function Trending() {
   return (
     <div>
       <div className="container">
-        <div className="mb-12 2xl:mb-16">
+        <div className="mb-8 sm:mb-12 2xl:mb-16">
           <Bar
             prevButton={prevRef}
             nextButton={nextRef}
@@ -40,6 +40,23 @@ function Trending() {
               swiper.navigation.init();
               swiper.navigation.update();
             }
+          }}
+          breakpoints={{
+            200: {
+              slidesPerView: 1.2,
+            },
+            480: {
+              slidesPerView: 1.7,
+            },
+            560: {
+              slidesPerView: 2,
+            },
+            700: {
+              slidesPerView: 2.5,
+            },
+            1280: {
+              slidesPerView: 3.5,
+            },
           }}
         >
           <SwiperSlide>

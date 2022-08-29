@@ -1,8 +1,8 @@
 import Bar from "components/Bar";
 import TrendingCard from "components/TrendingCard";
 import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { SwiperSlide } from "swiper/react";
+import Slider from "components/Slider";
 
 function Trending() {
   const prevRef = useRef<HTMLButtonElement>(null);
@@ -21,26 +21,11 @@ function Trending() {
         </div>
       </div>
       <div className="ml-[7vw]">
-        <Swiper
+        <Slider
           slidesPerView={3.5}
           spaceBetween={30}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onSwiper={(swiper) => {
-            // @ts-ignore
-            // eslint-disable-next-line no-param-reassign
-            swiper.params.navigation.prevEl = prevRef.current;
-            // @ts-ignore
-            // eslint-disable-next-line no-param-reassign
-            swiper.params.navigation.nextEl = nextRef.current;
-            if (swiper.navigation) {
-              swiper.navigation.destroy();
-              swiper.navigation.init();
-              swiper.navigation.update();
-            }
-          }}
+          prevRef={prevRef}
+          nextRef={nextRef}
           breakpoints={{
             200: {
               slidesPerView: 1.2,
@@ -77,7 +62,7 @@ function Trending() {
           <SwiperSlide>
             <TrendingCard img="images/trending-img-3.png" />
           </SwiperSlide>
-        </Swiper>
+        </Slider>
       </div>
     </div>
   );

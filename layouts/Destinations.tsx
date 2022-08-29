@@ -1,9 +1,8 @@
 import Bar from "components/Bar";
-import DestinationCard from "components/DestinationCard";
 import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { SwiperSlide } from "swiper/react";
 import DestinationGridCard from "components/DestinationGridCard";
+import Slider from "components/Slider";
 
 function Destinations() {
   const prevRef = useRef<HTMLButtonElement>(null);
@@ -16,30 +15,17 @@ function Destinations() {
           <Bar
             title="Top Destinations"
             subtitle="Sost Brilliant reasons Entrada should be your one-stop-shop!"
+            prevButton={prevRef}
+            nextButton={nextRef}
           />
         </div>
 
         <div>
-          <Swiper
+          <Slider
             slidesPerView={1}
             spaceBetween={20}
-            navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
-            }}
-            onSwiper={(swiper) => {
-              // @ts-ignore
-              // eslint-disable-next-line no-param-reassign
-              swiper.params.navigation.prevEl = prevRef.current;
-              // @ts-ignore
-              // eslint-disable-next-line no-param-reassign
-              swiper.params.navigation.nextEl = nextRef.current;
-              if (swiper.navigation) {
-                swiper.navigation.destroy();
-                swiper.navigation.init();
-                swiper.navigation.update();
-              }
-            }}
+            prevRef={prevRef}
+            nextRef={nextRef}
           >
             <SwiperSlide>
               <DestinationGridCard
@@ -167,7 +153,7 @@ function Destinations() {
                 ]}
               />
             </SwiperSlide>
-          </Swiper>
+          </Slider>
         </div>
       </div>
     </div>

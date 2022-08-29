@@ -1,12 +1,12 @@
 import Bar from "components/Bar";
 import CategoryCard from "components/CategoryCard";
+import Slider from "components/Slider";
 import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { SwiperSlide } from "swiper/react";
 
 function Category() {
-  const prevRef = useRef<HTMLButtonElement>(null);
-  const nextRef = useRef<HTMLButtonElement>(null);
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
 
   return (
     <div>
@@ -15,33 +15,18 @@ function Category() {
           <Bar
             title="Select Category"
             subtitle="Sost Brilliant reasons Entrada should be your one-stop-shop!"
-            prevButton={prevRef}
-            nextButton={nextRef}
+            prevButton={navigationPrevRef}
+            nextButton={navigationNextRef}
           />
         </div>
       </div>
 
       <div className="ml-[7vw]">
-        <Swiper
+        <Slider
           slidesPerView={4.5}
           spaceBetween={30}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onSwiper={(swiper) => {
-            // @ts-ignore
-            // eslint-disable-next-line no-param-reassign
-            swiper.params.navigation.prevEl = prevRef.current;
-            // @ts-ignore
-            // eslint-disable-next-line no-param-reassign
-            swiper.params.navigation.nextEl = nextRef.current;
-            if (swiper.navigation) {
-              swiper.navigation.destroy();
-              swiper.navigation.init();
-              swiper.navigation.update();
-            }
-          }}
+          prevRef={navigationPrevRef}
+          nextRef={navigationNextRef}
           breakpoints={{
             200: {
               slidesPerView: 1.2,
@@ -116,7 +101,7 @@ function Category() {
               icon="images/hiking-icon.svg"
             />
           </SwiperSlide>
-        </Swiper>
+        </Slider>
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
 import Bar from "components/Bar";
 import TourGuideCard from "components/TourGuideCard";
 import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { SwiperSlide } from "swiper/react";
+import Slider from "components/Slider";
+import dynamic from "next/dynamic";
 
 function TourGuide() {
   const prevRef = useRef<HTMLButtonElement>(null);
@@ -15,31 +16,20 @@ function TourGuide() {
           <Bar
             title="Tour Guides"
             subtitle="Sost Brilliant reasons Entrada should be your one-stop-shop!"
+            nextButton={nextRef}
+            prevButton={prevRef}
           />
         </div>
       </div>
 
       <div className="ml-[7vw]">
-        <Swiper
+        <Slider
           slidesPerView={1}
           spaceBetween={40}
-          loop={true}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onSwiper={(swiper) => {
-            // @ts-ignore
-            // eslint-disable-next-line no-param-reassign
-            swiper.params.navigation.prevEl = prevRef.current;
-            // @ts-ignore
-            // eslint-disable-next-line no-param-reassign
-            swiper.params.navigation.nextEl = nextRef.current;
-            if (swiper.navigation) {
-              swiper.navigation.destroy();
-              swiper.navigation.init();
-              swiper.navigation.update();
-            }
+          prevRef={prevRef}
+          nextRef={nextRef}
+          options={{
+            loop: true,
           }}
           breakpoints={{
             768: {
@@ -48,18 +38,20 @@ function TourGuide() {
           }}
         >
           <SwiperSlide>
-            <TourGuideCard index="01" img="images/tour-guide.png" />
+            <TourGuideCard cardIndex="01" img="images/tour-guide.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <TourGuideCard index="02" img="images/tour-guide.png" />
+            <TourGuideCard cardIndex="02" img="images/tour-guide.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <TourGuideCard index="03" img="images/tour-guide.png" />
+            <TourGuideCard cardIndex="03" img="images/tour-guide.png" />
           </SwiperSlide>
-        </Swiper>
+        </Slider>
       </div>
     </div>
   );
 }
 
-export default TourGuide;
+export default dynamic(() => Promise.resolve(TourGuide), {
+  ssr: false,
+});

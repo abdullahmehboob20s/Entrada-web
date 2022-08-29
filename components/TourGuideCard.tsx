@@ -3,21 +3,23 @@ import React from "react";
 
 interface Props {
   img: string;
-  index: string;
+  cardIndex: string;
 }
 
-function TourGuideCard(props: Props) {
+function TourGuideCard({ img = "", cardIndex = "" }: Props) {
   return (
     <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-8">
       <div className="w-full h-[260px] sm:h-auto sm:max-w-[240px] lg:max-w-[28vw] xl:max-w-[400px] 2xl:max-w-[512px] rounded-[20px] overflow-hidden relative">
-        <img
-          src={props.img}
-          className="w-full h-full object-cover object-center"
-          alt=""
-        />
+        {img ? (
+          <img
+            src={img}
+            className="w-full h-full object-cover object-center"
+            alt=""
+          />
+        ) : null}
 
         <div className="absolute bottom-0 left-0 text-sm xl:text-lg 2xl:text-2xl w-[2.8rem] h-[2.8rem] lg:w-[60px] lg:h-[60px] 2xl:w-[72px] 2xl:h-[72px] rounded-tr-[20px] bg-white flex items-center justify-center font-medium -text-blue-300">
-          {props.index}
+          {cardIndex}
         </div>
       </div>
 

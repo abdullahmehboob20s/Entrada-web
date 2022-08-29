@@ -13,28 +13,28 @@ interface Props {
 function Bar(props: Props) {
   const { showPrevAndNextButtons = true } = props;
   return (
-    <header className="flex items-center justify-between">
+    <header className="flex justify-between space-y-8 sm:space-y-0 sm:space-x-16 items-[unset] sm:items-center flex-col sm:flex-row">
       <div>
-        <h1 className="text-[30px] 2xl:text-[40px] font-bold mb-3">
+        <h1 className="text-2xl xl:text-[30px] 2xl:text-[40px] font-bold mb-3">
           {props.title}
         </h1>
-        <p className="text-lg 2xl:text-2xl -text-blue font-normal">
+        <p className="text-sm xl:text-lg 2xl:text-2xl -text-blue font-normal">
           {props.subtitle}
         </p>
       </div>
       {props.children ? props.children : null}
 
       {showPrevAndNextButtons ? (
-        <div className="flex space-x-4 items-center">
+        <div className="flex space-x-4 justify-between sm:justify-start items-center flex-row">
           <button
             ref={props.prevButton}
-            className="w-[50px] h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-blue flex items-center justify-center text-2xl 2xl:text-3xl -text-blue"
+            className="w-[36px] h-[36px] xl:w-[50px] xl:h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-blue flex items-center justify-center text-2xl 2xl:text-3xl -text-blue"
           >
             <MdKeyboardArrowLeft />
           </button>
           <button
             ref={props.nextButton}
-            className="w-[50px] h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-green flex items-center justify-center text-2xl 2xl:text-3xl text-white -bg-green"
+            className="w-[36px] h-[36px] xl:w-[50px] xl:h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-green flex items-center justify-center text-2xl 2xl:text-3xl text-white -bg-green"
           >
             <MdKeyboardArrowRight />
           </button>

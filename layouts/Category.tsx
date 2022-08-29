@@ -11,7 +11,7 @@ function Category() {
   return (
     <div>
       <div className="container">
-        <div className="mb-14">
+        <div className="mb-10 sm:mb-14">
           <Bar
             title="Select Category"
             subtitle="Sost Brilliant reasons Entrada should be your one-stop-shop!"
@@ -41,6 +41,23 @@ function Category() {
               swiper.navigation.init();
               swiper.navigation.update();
             }
+          }}
+          breakpoints={{
+            200: {
+              slidesPerView: 1.2,
+            },
+            400: {
+              slidesPerView: 1.7,
+            },
+            560: {
+              slidesPerView: 2.5,
+            },
+            768: {
+              slidesPerView: 3.5,
+            },
+            1024: {
+              slidesPerView: 4.5,
+            },
           }}
         >
           <SwiperSlide>

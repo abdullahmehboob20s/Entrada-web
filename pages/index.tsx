@@ -19,10 +19,10 @@ function Index() {
       <div className="mb-150px">
         <Hero />
       </div>
-      {/* <div className="mb-100px">
+      <div className="mb-100px">
         <Category />
       </div>
-      <div className="mb-100px">
+      {/* <div className="mb-100px">
         <Trending />
       </div>
       <div className="mb-100px">

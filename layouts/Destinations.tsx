@@ -12,7 +12,7 @@ function Destinations() {
   return (
     <div>
       <div className="container">
-        <div className="mb-12 2xl:mb-16">
+        <div className="mb-8 md:mb-12 2xl:mb-16">
           <Bar
             title="Top Destinations"
             subtitle="Sost Brilliant reasons Entrada should be your one-stop-shop!"
@@ -43,13 +43,127 @@ function Destinations() {
           >
             <SwiperSlide>
               <DestinationGridCard
-                images={[
-                  "images/destination-img-1.png",
-                  "images/destination-img-2.png",
-                  "images/destination-img-3.png",
-                  "images/destination-img-4.png",
-                  "images/destination-img-5.png",
-                  "images/destination-img-6.png",
+                data={[
+                  {
+                    link: "/",
+                    title: "Vientam",
+                    subtitle: "WaterFall",
+                    img: "images/destination-img-1.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Old Rain",
+                    subtitle: "Mountain & Sea Views",
+                    img: "images/destination-img-2.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Greece",
+                    subtitle: "The Aegean and Lonian Seas.",
+                    img: "images/destination-img-3.png",
+                  },
+                  {
+                    link: "/",
+                    title: "London",
+                    subtitle: "City of Young Dreams",
+                    img: "images/destination-img-4.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Amsterdam",
+                    subtitle: "City of Lake",
+                    img: "images/destination-img-5.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Paris",
+                    subtitle: "Feel The Love",
+                    img: "images/destination-img-6.png",
+                  },
+                ]}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <DestinationGridCard
+                data={[
+                  {
+                    link: "/",
+                    title: "Vientam",
+                    subtitle: "WaterFall",
+                    img: "images/destination-img-1.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Old Rain",
+                    subtitle: "Mountain & Sea Views",
+                    img: "images/destination-img-2.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Greece",
+                    subtitle: "The Aegean and Lonian Seas.",
+                    img: "images/destination-img-3.png",
+                  },
+                  {
+                    link: "/",
+                    title: "London",
+                    subtitle: "City of Young Dreams",
+                    img: "images/destination-img-4.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Amsterdam",
+                    subtitle: "City of Lake",
+                    img: "images/destination-img-5.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Paris",
+                    subtitle: "Feel The Love",
+                    img: "images/destination-img-6.png",
+                  },
+                ]}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <DestinationGridCard
+                data={[
+                  {
+                    link: "/",
+                    title: "Vientam",
+                    subtitle: "WaterFall",
+                    img: "images/destination-img-1.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Old Rain",
+                    subtitle: "Mountain & Sea Views",
+                    img: "images/destination-img-2.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Greece",
+                    subtitle: "The Aegean and Lonian Seas.",
+                    img: "images/destination-img-3.png",
+                  },
+                  {
+                    link: "/",
+                    title: "London",
+                    subtitle: "City of Young Dreams",
+                    img: "images/destination-img-4.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Amsterdam",
+                    subtitle: "City of Lake",
+                    img: "images/destination-img-5.png",
+                  },
+                  {
+                    link: "/",
+                    title: "Paris",
+                    subtitle: "Feel The Love",
+                    img: "images/destination-img-6.png",
+                  },
                 ]}
               />
             </SwiperSlide>

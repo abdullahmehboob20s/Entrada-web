@@ -9,13 +9,17 @@ function Hero() {
     <header className="pt-8">
       <div className="container">
         <div className="relative pb-0 py-[5rem] px-24 2xl:py-[6.4rem] 2xl:px-32 h-full ">
-          <div className="absolute top-0 left-0 w-full h-[90%] 2xl:h-[78%] z-[-10] -bg-green rounded-[34px]"></div>
+          <img
+            src="images/hero-bg.png"
+            className="absolute top-0 left-0 w-full h-[90%] 2xl:h-[78%] z-[-10] rounded-[34px]"
+            alt=""
+          />
 
-          <h3 className="text-2xl text-white font-normal mb-6">
+          <h3 className="text-lg 2xl:text-2xl text-white font-normal mb-6">
             - The Himalayan Mountain Ranges
           </h3>
 
-          <h1 className="text-7xl 2xl:text-9xl font-bold text-white mb-16">
+          <h1 className="text-6xl 2xl:text-9xl font-bold text-white mb-16">
             Nepal Country
           </h1>
 

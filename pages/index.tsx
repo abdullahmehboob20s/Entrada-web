@@ -31,10 +31,10 @@ function Index() {
       <div className="mb-100px">
         <BestSeller />
       </div>
-      {/* <div className="mb-150px">
+      <div className="mb-150px">
         <TourGuide />
       </div>
-      <div className="mb-150px">
+      {/* <div className="mb-150px">
         <BookNow />
       </div>
       <div className="mb-150px">

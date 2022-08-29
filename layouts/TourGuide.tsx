@@ -11,7 +11,7 @@ function TourGuide() {
   return (
     <div>
       <div className="container">
-        <div className="mb-12 2xl:mb-16">
+        <div className="mb-8 md:mb-12 2xl:mb-16">
           <Bar
             title="Tour Guides"
             subtitle="Sost Brilliant reasons Entrada should be your one-stop-shop!"
@@ -21,7 +21,7 @@ function TourGuide() {
 
       <div className="ml-[7vw]">
         <Swiper
-          slidesPerView={1.3}
+          slidesPerView={1}
           spaceBetween={40}
           loop={true}
           navigation={{
@@ -40,6 +40,11 @@ function TourGuide() {
               swiper.navigation.init();
               swiper.navigation.update();
             }
+          }}
+          breakpoints={{
+            768: {
+              slidesPerView: 1.3,
+            },
           }}
         >
           <SwiperSlide>

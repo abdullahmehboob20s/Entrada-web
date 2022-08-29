@@ -16,7 +16,7 @@ function Index() {
   return (
     <div>
       <Navbar />
-      <div className="mb-150px">
+      {/* <div className="mb-150px">
         <Hero />
       </div>
       <div className="mb-100px">
@@ -48,7 +48,7 @@ function Index() {
       </div>
       <div className="mb-8">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

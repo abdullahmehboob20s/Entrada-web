@@ -40,7 +40,7 @@ function Index() {
       <div className="mb-150px">
         <Subscribe />
       </div>
-      <div className="mb-150px">
+      <div className="mb-16 md:mb-150px">
         <Partners />
       </div>
       <div className="mb-150px">

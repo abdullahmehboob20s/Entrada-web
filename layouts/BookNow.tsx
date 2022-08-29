@@ -8,9 +8,12 @@ function BookNow() {
           <img
             src="images/book-now-bg.png"
             alt=""
-            className="absolute top-0 left-0 w-full h-full z-[-1] pointer-events-none select-none object-cover"
+            className="absolute top-0 left-0 w-full h-full z-[-1] pointer-events-none select-none object-cover "
           />
-          <h1 className="text-center text-xl md:text-3xl xl:text-[40px] 2xl:text-[56px] text-white font-medium mb-8 xl:mb-9 leading-[1.7]">
+          <h1
+            className="text-center text-xl md:text-3xl xl:text-[40px] 2xl:text-[56px] text-white font-medium mb-8 xl:mb-9"
+            style={{ lineHeight: "1.4" }}
+          >
             Tour the World from Your Couch with <br /> #ExperienceLive!
           </h1>
 

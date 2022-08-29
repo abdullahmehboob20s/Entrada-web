@@ -42,17 +42,17 @@
   .hero-selector-cards {
     --spacing: 40px;
 
-    @apply mt-[7%] py-8 px-14 gap-[var(--spacing)] 2xl:py-12 2xl:px-[72px] bg-white rounded-[1rem] grid grid-cols-[1fr_.8fr_.4fr_.5fr] shadow-[0_35px_70px_-15px_rgba(0,0,0,0.2)];
+    @apply py-6 px-8 sm:px-10 xl:py-8 xl:px-14 gap-[1.6rem] lg:gap-[var(--spacing)] 2xl:py-12 2xl:px-[72px] bg-white rounded-[1rem] grid grid-cols-[1fr] md:grid-cols-[1fr_1fr_.5fr_.3fr] lg:grid-cols-[1fr_.8fr_.4fr_.3fr] shadow-[0_35px_70px_-15px_rgba(0,0,0,0.2)] md:absolute  md:bottom-[-14%] left-[50%] md:translate-x-[-50%] md:w-[84%] mt-12 md:mt-0;
   }
 
   .hero-selector-cards > :nth-child(1),
   .hero-selector-cards > :nth-child(2) {
-    @apply pr-[var(--spacing)] relative;
+    @apply md:pr-[1.6rem] lg:pr-[var(--spacing)] relative;
   }
 
   .hero-selector-cards > :nth-child(1)::before,
   .hero-selector-cards > :nth-child(2)::before {
-    @apply content-[""] absolute w-[1px] right-0 top-[50%] translate-y-[-50%] h-full bg-[#707070] opacity-[.4];
+    @apply md:content-[""] absolute w-[1px] right-0 top-[50%] translate-y-[-50%] h-full bg-[#707070] opacity-[.4];
   }
 
   .black-screen {

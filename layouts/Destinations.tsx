@@ -1,8 +1,14 @@
 import Bar from "components/Bar";
 import DestinationCard from "components/DestinationCard";
-import React from "react";
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import DestinationGridCard from "components/DestinationGridCard";
 
 function Destinations() {
+  const prevRef = useRef<HTMLButtonElement>(null);
+  const nextRef = useRef<HTMLButtonElement>(null);
+
   return (
     <div>
       <div className="container">
@@ -13,40 +19,41 @@ function Destinations() {
           />
         </div>
 
-        <div className="grid grid-cols-4 grid-rows-[19vw_19vw] gap-8">
-          <DestinationCard
-            title="Vientam"
-            subtitle="WaterFall"
-            img="images/destination-img-1.png"
-          />
-          <DestinationCard
-            title="Old Rain"
-            subtitle="Mountain & Sea Views"
-            img="images/destination-img-2.png"
-            className="col-start-1 col-end-2 row-start-2 row-end-3"
-          />
-          <DestinationCard
-            title="Greece"
-            subtitle="The Aegean and Lonian Seas."
-            img="images/destination-img-3.png"
-            className="col-start-2 col-end-3 row-start-1 row-end-3"
-          />
-          <DestinationCard
-            title="London"
-            subtitle="City of Young Dreams"
-            img="images/destination-img-4.png"
-            className="col-start-3 col-end-[-1] row-start-1 row-end-2"
-          />
-          <DestinationCard
-            title="Amsterdam"
-            subtitle="City of Lake"
-            img="images/destination-img-5.png"
-          />
-          <DestinationCard
-            title="Paris"
-            subtitle="Feel The Love"
-            img="images/destination-img-6.png"
-          />
+        <div>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={20}
+            navigation={{
+              prevEl: prevRef.current,
+              nextEl: nextRef.current,
+            }}
+            onSwiper={(swiper) => {
+              // @ts-ignore
+              // eslint-disable-next-line no-param-reassign
+              swiper.params.navigation.prevEl = prevRef.current;
+              // @ts-ignore
+              // eslint-disable-next-line no-param-reassign
+              swiper.params.navigation.nextEl = nextRef.current;
+              if (swiper.navigation) {
+                swiper.navigation.destroy();
+                swiper.navigation.init();
+                swiper.navigation.update();
+              }
+            }}
+          >
+            <SwiperSlide>
+              <DestinationGridCard
+                images={[
+                  "images/destination-img-1.png",
+                  "images/destination-img-2.png",
+                  "images/destination-img-3.png",
+                  "images/destination-img-4.png",
+                  "images/destination-img-5.png",
+                  "images/destination-img-6.png",
+                ]}
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </div>

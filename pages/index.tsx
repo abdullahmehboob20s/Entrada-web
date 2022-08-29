@@ -34,13 +34,13 @@ function Index() {
       <div className="mb-150px">
         <TourGuide />
       </div>
-      {/* <div className="mb-150px">
+      <div className="mb-150px">
         <BookNow />
       </div>
       <div className="mb-150px">
         <Subscribe />
       </div>
-      <div className="mb-150px">
+      {/* <div className="mb-150px">
         <Partners />
       </div>
       <div className="mb-150px">

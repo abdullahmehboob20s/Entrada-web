@@ -11,7 +11,7 @@ function Navbar() {
     <>
       <nav className="container py-4 sm:py-6 2xl:py-10 flex items-center justify-between space-x-[50px] lg:space-x-[120px]">
         <div className="flex items-center">
-          <h1 className="text-2xl md:text-3xl 2xl:text-[40px] font-semibold ">
+          <h1 className="text-2xl md:text-3xl 2xl:text-[40px] font-semibold">
             Entrada
           </h1>
         </div>

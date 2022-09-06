@@ -84,6 +84,26 @@
     opacity: 1;
     pointer-events: visible;
   }
+
+  .checkbox-input::before {
+    content: "\2713";
+    font-size: 12px;
+    color: white;
+  }
+
+  .checkbox-input:checked {
+    @apply -bg-green border-2 -border-green;
+  }
+
+  /* TravelingOptions ==== */
+
+  .TravelingOptions .cards {
+    @apply border-b-[1px] -border-gray pb-6 mb-6;
+  }
+
+  .TravelingOptions .cards .card-title {
+    @apply -text-gray text-lg font-bold mb-5;
+  }
 }
 
 .swiper-slide {

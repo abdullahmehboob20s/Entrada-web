@@ -12,13 +12,14 @@ function Destination() {
   return (
     <div>
       <div className="relative mb-100px">
-        <Image
-          layout="fill"
-          src="/images/Destination-banner.png"
-          className="-z-20"
-          objectFit="cover"
-          alt=""
-        />
+        <div className="absolute top-0 left-0 w-full h-full -z-50">
+          <Image
+            layout="fill"
+            src="/images/Destination-banner.png"
+            objectFit="cover"
+            alt=""
+          />
+        </div>
         <div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(0,0,0,.42)]"></div>
 
         <Navbar
@@ -26,7 +27,7 @@ function Destination() {
           textColor="text-white"
         />
 
-        <div>
+        <div className="z-40">
           <Hero />
         </div>
       </div>

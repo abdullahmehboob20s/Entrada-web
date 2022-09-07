@@ -6,14 +6,17 @@ import Footer from "layouts/Footer";
 import Navbar from "layouts/Navbar";
 import Partners from "layouts/Partners";
 import Questions from "layouts/Questions";
+import Image from "next/image";
 
 function Destination() {
   return (
     <div>
       <div className="relative mb-100px">
-        <img
-          src="images/Destination-banner.png"
-          className="absolute top-0 left-0 w-full h-full -z-20 object-cover"
+        <Image
+          layout="fill"
+          src="/images/Destination-banner.png"
+          className="-z-20"
+          objectFit="cover"
           alt=""
         />
         <div className="absolute top-0 left-0 w-full h-full -z-10 bg-[rgba(0,0,0,.42)]"></div>

@@ -14,7 +14,7 @@ function Search() {
         <Navbar />
       </div>
       <div className="mb-6">
-        <Navigator />
+        <Navigator title="Home / Things to do in Tirana / Things to do in Petrela" />
       </div>
       <div className="mb-7">
         <div className="container">

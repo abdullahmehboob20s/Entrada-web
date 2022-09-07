@@ -7,7 +7,7 @@ interface Props {
 
 function TrendingCard(props: Props) {
   return (
-    <div className="flex-1 rounded-[20px] border-[1px] border-[#e6e6e65d] shadow-[1px_1px_4px_rgba(0,0,0,.2)]">
+    <div className="flex-1 rounded-[20px] border-[1px] border-[#e6e6e65d] shadow-[1px_1px_4px_rgba(0,0,0,.2)] bg-white">
       <div className="p-3 xl:p-4 pb-0">
         <div className="rounded-[20px] overflow-hidden flex relative">
           <Badge title="4.5" bgColor="#FEF2DE" />

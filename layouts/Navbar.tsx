@@ -5,9 +5,10 @@ import { IoCloseSharp, IoMenu } from "react-icons/io5";
 
 interface Props {
   wrapperClassName?: string;
+  textColor?: "-text-black" | "text-white";
 }
 
-function Navbar({ wrapperClassName }: Props) {
+function Navbar({ wrapperClassName, textColor = "-text-black" }: Props) {
   const [sidebar, setSidebar] = useState(false);
   const sidebarRef = OutsideClickDetector(() => setSidebar(false));
 
@@ -16,7 +17,9 @@ function Navbar({ wrapperClassName }: Props) {
       <div className={wrapperClassName}>
         <nav className="container py-4 sm:py-6 2xl:py-10 flex items-center justify-between space-x-[50px] lg:space-x-[120px]">
           <div className="flex items-center">
-            <h1 className="text-2xl md:text-3xl 2xl:text-[40px] font-semibold">
+            <h1
+              className={`text-2xl md:text-2xl 2xl:text-[40px] font-semibold ${textColor}`}
+            >
               Entrada
             </h1>
           </div>
@@ -44,26 +47,34 @@ function Navbar({ wrapperClassName }: Props) {
             {/*  */}
             <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:items-center md:space-x-10">
               <Link href="/">
-                <a className="text-white w-fit md:text-inherit text-base md:text-sm lg:text-base 2xl:text-xl font-medium">
+                <a
+                  className={`w-fit text-base md:text-sm 2xl:text-xl font-medium ${textColor}`}
+                >
                   Destination
                 </a>
               </Link>
               <Link href="/">
-                <a className="text-white w-fit md:text-inherit text-base md:text-sm lg:text-base 2xl:text-xl font-medium">
+                <a
+                  className={`w-fit text-base md:text-sm 2xl:text-xl font-medium ${textColor}`}
+                >
                   Bookings
                 </a>
               </Link>
               <Link href="/">
-                <a className="text-white w-fit md:text-inherit text-base md:text-sm lg:text-base 2xl:text-xl font-medium">
+                <a
+                  className={`w-fit text-base md:text-sm 2xl:text-xl font-medium ${textColor}`}
+                >
                   Activities
                 </a>
               </Link>
             </div>
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:items-center md:space-x-[24px] lg:space-x-[32px]">
-              <button className="text-sm lg:text-base 2xl:text-xl font-normal bg-white py-2 rounded-md md:bg-transparent md:py-0">
+              <button
+                className={`text-sm 2xl:text-xl font-normal bg-white py-2 rounded-md md:bg-transparent md:py-0 ${textColor}`}
+              >
                 Log in
               </button>
-              <button className="text-inherit md:text-white text-sm lg:text-base 2xl:text-xl font-normal py-2 md:py-[0.4rem] px-4 lg:py-2 lg:px-5 bg-white md:-bg-green rounded-md md:rounded-[10rem]">
+              <button className="text-inherit md:text-white text-sm 2xl:text-xl font-normal py-2 md:py-[0.4rem] px-4 lg:py-[.3rem] lg:px-4 bg-white md:-bg-green rounded-md md:rounded-[10rem]">
                 Sign up
               </button>
             </div>

@@ -58,7 +58,9 @@ function Hero() {
             </div>
           </div>
 
-          <HeroPlaceSelector />
+          <div className="md:absolute  md:bottom-[-14%] left-[50%] md:translate-x-[-50%] mt-12 md:mt-0 md:w-[84%]">
+            <HeroPlaceSelector />
+          </div>
         </div>
       </div>
     </header>

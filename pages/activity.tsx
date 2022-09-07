@@ -1,14 +1,9 @@
 import Place from "layouts/Activity/Place";
 import Navigator from "components/Navigator";
-import Guides from "layouts/Destination/Guides";
-import Hero from "layouts/Destination/Hero";
-import ThingsToDo from "layouts/Destination/ThingsToDo";
-import Welcome from "layouts/Destination/Welcome";
 import Footer from "layouts/Footer";
 import Navbar from "layouts/Navbar";
 import Partners from "layouts/Partners";
 import Questions from "layouts/Questions";
-import Image from "next/image";
 
 function Activity() {
   return (

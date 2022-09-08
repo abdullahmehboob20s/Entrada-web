@@ -4,7 +4,7 @@ import ReviewBar from "./ReviewBar";
 function TotalReviews() {
   return (
     <div>
-      <p className="activity-text mb-12">
+      <p className="activity-text mb-8 md:mb-12">
         Total review count and overall rating based on Outdoor.al and
         Tripadvisor reviews
       </p>

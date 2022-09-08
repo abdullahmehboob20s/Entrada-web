@@ -52,21 +52,21 @@ function Navbar({ wrapperClassName, textColor = "-text-black" }: Props) {
             <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:items-center md:space-x-10">
               <Link href="/destination">
                 <a
-                  className={`w-fit text-base md:text-sm 2xl:text-xl font-medium ${textColor}`}
+                  className={`w-fit text-base md:text-sm 2xl:text-xl font-medium text-white md:${textColor}`}
                 >
                   Destination
                 </a>
               </Link>
               <Link href="/">
                 <a
-                  className={`w-fit text-base md:text-sm 2xl:text-xl font-medium ${textColor}`}
+                  className={`w-fit text-base md:text-sm 2xl:text-xl font-medium text-white md:${textColor}`}
                 >
                   Bookings
                 </a>
               </Link>
               <Link href="/activity">
                 <a
-                  className={`w-fit text-base md:text-sm 2xl:text-xl font-medium ${textColor}`}
+                  className={`w-fit text-base md:text-sm 2xl:text-xl font-medium text-white md:${textColor}`}
                 >
                   Activities
                 </a>
@@ -74,7 +74,7 @@ function Navbar({ wrapperClassName, textColor = "-text-black" }: Props) {
             </div>
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:items-center md:space-x-[24px] lg:space-x-[32px]">
               <button
-                className={`text-sm 2xl:text-xl font-normal bg-white py-2 rounded-md md:bg-transparent md:py-0 ${textColor}`}
+                className={`text-sm 2xl:text-xl font-normal bg-white py-2 rounded-md md:bg-transparent md:py-0 text-black md:${textColor}`}
               >
                 Log in
               </button>

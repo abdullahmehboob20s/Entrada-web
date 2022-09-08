@@ -33,7 +33,7 @@ function PlaceReviews() {
           />
         </div>
       </div>
-      <p className="activity-text mb-12">128 Reviews</p>
+      <p className="activity-text mb-5 md:mb-12">128 Reviews</p>
 
       <div className="mb-100px">
         <TotalReviews />

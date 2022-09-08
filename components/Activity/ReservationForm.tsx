@@ -6,7 +6,7 @@ import { BsCalendar3 } from "react-icons/bs";
 function ReservationForm() {
   return (
     <div className="-bg-yellow-200 pb-10">
-      <div className="-bg-green py-4 px-4 -text-yellow-200 text-base font-bold mb-10">
+      <div className="-bg-green py-4 px-4 -text-yellow-200 text-sm sm:text-base font-bold mb-10">
         One-Click Reservation
       </div>
 
@@ -25,7 +25,7 @@ function ReservationForm() {
             label="Date"
             placeholder="Enter Date."
             Icon={() => (
-              <BsCalendar3 className="text-black opacity-70 text-xl absolute top-1/2 -translate-y-1/2 right-4" />
+              <BsCalendar3 className="text-black opacity-70 text-base lg:text-xl absolute top-1/2 -translate-y-1/2 right-4" />
             )}
           />
           <LabelAndInput
@@ -40,7 +40,7 @@ function ReservationForm() {
           </div>
           <label
             htmlFor="understand"
-            className="text-base font-bold -text-blue-300"
+            className="text-sm xl:text-base font-bold -text-blue-300"
           >
             I understand that this is not final reservation and an agent will
             contact to finish this process.
@@ -51,14 +51,16 @@ function ReservationForm() {
           <p className="text-base font-bold -text-blue-300">Total</p>
 
           <div className="text-right">
-            <p className="text-base -text-blue-300">10 x 119.00</p>
-            <h1 className="text-2xl font-bold -text-blue-300">$1190.00</h1>
+            <p className="text-sm xl:text-base -text-blue-300">10 x 119.00</p>
+            <h1 className="text-xl xl:text-2xl font-bold -text-blue-300">
+              $1190.00
+            </h1>
           </div>
         </div>
 
         <button
           type="submit"
-          className="w-full p-2 -bg-green rounded-md -text-yellow-200 text-base font-bold"
+          className="w-full p-2 -bg-green rounded-md -text-yellow-200 text-sm xl:text-base font-bold"
         >
           Make Reservation
         </button>

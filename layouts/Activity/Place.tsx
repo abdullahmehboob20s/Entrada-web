@@ -7,7 +7,7 @@ function Place() {
   return (
     <div>
       <div className="container">
-        <div className="mb-4">
+        <div className="mb-2 sm:mb-4">
           <Ranking />
         </div>
         <div className="mb-10">

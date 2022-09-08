@@ -27,7 +27,9 @@ function Navbar({ wrapperClassName, textColor = "-text-black" }: Props) {
           </div>
 
           <button
-            className="flex md:hidden text-2xl -text-blue-300"
+            className={`flex md:hidden text-2xl ${
+              textColor == "-text-black" ? "-text-blue-300" : textColor
+            } `}
             onClick={() => setSidebar((val) => !val)}
           >
             <IoMenu />

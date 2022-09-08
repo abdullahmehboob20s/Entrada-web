@@ -5,12 +5,14 @@ import HeroPlaceSelector from "layouts/HeroPlaceSelector";
 
 function Hero() {
   return (
-    <div className="container pb-20 py-12 px-20 flex-1 flex flex-col justify-center">
+    <div className="container pb-14 md:pb-20 py-4 sm:py-6 md:py-12 sm:px-12 md:px-20 flex-1 flex flex-col justify-center">
       <div className="mb-10 xl:mb-14">
-        <h4 className="text-base xl:text-2xl text-white font-normal mb-3">
+        <h4 className="text-sm md:text-base xl:text-2xl text-white font-normal mb-3">
           - Justinian Castle of
         </h4>
-        <h1 className="text-5xl xl:text-8xl font-bold text-white">Petrela</h1>
+        <h1 className="text-4xl md:text-5xl xl:text-8xl font-bold text-white">
+          Petrela
+        </h1>
       </div>
 
       <div className="">
@@ -25,8 +27,8 @@ function Hero() {
           </div>
 
           <div className="flex flex-col items-end space-y-2">
-            <BiSun className="text-white text-3xl xl:text-4xl" />
-            <p className="text-base xl:text-xl text-white font-medium">
+            <BiSun className="text-white text-2xl md:text-3xl xl:text-4xl" />
+            <p className="text-sm md:text-base xl:text-xl text-white font-medium">
               -02 C Very Cold
             </p>
           </div>

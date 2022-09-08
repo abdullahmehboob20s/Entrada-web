@@ -85,7 +85,7 @@ function Navbar({ wrapperClassName, textColor = "-text-black" }: Props) {
                     className={`w-full h-full py-1 px-2 rounded-md text-base md:text-sm outline-none border-[1px] border-[#E5E5E5] ${textColor}`}
                     placeholder="Search for “Shengjergj” or “Petrela”"
                     onClick={(e) => sendTo(e, "/search")}
-                    ref={inputElement}
+                    // ref={inputElement}
                   />
 
                   <GoSearch

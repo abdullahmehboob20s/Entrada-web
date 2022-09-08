@@ -4,6 +4,7 @@ import Footer from "layouts/Footer";
 import Navbar from "layouts/Navbar";
 import Partners from "layouts/Partners";
 import Questions from "layouts/Questions";
+import PlaceDetails from "layouts/Activity/PlaceDetails";
 
 function Activity() {
   return (
@@ -22,8 +23,11 @@ function Activity() {
           </h1>
         </div>
       </div>
-      <div className="mb-100px">
+      <div className="mb-16">
         <Place />
+      </div>
+      <div className="mb-200px">
+        <PlaceDetails />
       </div>
       <div className="mb-16 md:mb-150px ">
         <Partners />

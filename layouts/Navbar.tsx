@@ -17,11 +17,13 @@ function Navbar({ wrapperClassName, textColor = "-text-black" }: Props) {
       <div className={wrapperClassName}>
         <nav className="container py-4 sm:py-6 2xl:py-10 flex items-center justify-between space-x-[50px] lg:space-x-[120px]">
           <div className="flex items-center">
-            <h1
-              className={`text-2xl md:text-2xl 2xl:text-[40px] font-semibold ${textColor}`}
-            >
-              Entrada
-            </h1>
+            <Link href="/">
+              <a
+                className={`text-2xl md:text-2xl 2xl:text-[40px] font-semibold ${textColor}`}
+              >
+                Entrada
+              </a>
+            </Link>
           </div>
 
           <button
@@ -46,7 +48,7 @@ function Navbar({ wrapperClassName, textColor = "-text-black" }: Props) {
             </button>
             {/*  */}
             <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:items-center md:space-x-10">
-              <Link href="/">
+              <Link href="/destination">
                 <a
                   className={`w-fit text-base md:text-sm 2xl:text-xl font-medium ${textColor}`}
                 >

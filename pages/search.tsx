@@ -23,13 +23,15 @@ function Search() {
       </div>
 
       <div className="mb-16">
-        <div className="container flex items-center justify-between space-x-8">
-          <ActivityCard />
-          <ActivityCard />
-          <ActivityCard />
-          <ActivityCard />
-          <ActivityCard />
-          <ActivityCard />
+        <div className="container">
+          <div className="flex items-center justify-center flex-wrap -mx-2 xl:m-0 xl:justify-between xl:space-x-8">
+            <ActivityCard />
+            <ActivityCard />
+            <ActivityCard />
+            <ActivityCard />
+            <ActivityCard />
+            <ActivityCard />
+          </div>
         </div>
       </div>
 

@@ -6,14 +6,16 @@ import TwoThumbs from "./TwoThumbs";
 function TravelingOptions() {
   return (
     <div className="TravelingOptions border-[1px] border-[#BFBFBF] rounded">
-      <div className="-bg-green py-4 px-6 mb-2">
-        <h2 className="text-xl -text-yellow-200 mb-4 font-bold">
+      <div className="-bg-green py-4 px-4 xl:px-6 mb-2">
+        <h2 className="text-base xl:text-xl -text-yellow-200 mb-4 font-bold">
           When are you traveling?
         </h2>
 
         <div className="py-2 px-4 rounded-md bg-white border-[1px] border-[#707070] flex items-center space-x-3">
-          <BsCalendar3 className="text-black opacity-70 text-xl" />
-          <p className="text-lg text-black opacity-80 ">Select Dates </p>
+          <BsCalendar3 className="text-black opacity-70 text-base xl:text-xl" />
+          <p className="text-sm xl:text-lg text-black opacity-80 ">
+            Select Dates{" "}
+          </p>
         </div>
       </div>
 

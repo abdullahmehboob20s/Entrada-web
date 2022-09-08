@@ -4,7 +4,7 @@ import TravelingAreaCard from "./TravelingAreaCard";
 
 function TravelingDetails() {
   return (
-    <div className="container grid grid-cols-[.4fr_1fr] gap-7">
+    <div className="container grid grid-cols-[1fr_1fr] xl:grid-cols-[.4fr_1fr] gap-7">
       <TravelingOptions />
       <div className="grid gap-5">
         <TravelingAreaCard />

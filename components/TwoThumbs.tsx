@@ -13,10 +13,10 @@ const TwoThumbs: React.FC<{ rtl: boolean }> = ({ rtl }) => {
   return (
     <div>
       <output className="flex items-center justify-between mb-4">
-        <span className="text-sm -text-gray font-normal">
+        <span className="text-xs xl:text-sm -text-gray font-normal">
           ${values[0].toFixed(0)}
         </span>{" "}
-        <span className="text-sm -text-gray font-normal">
+        <span className="text-xs xl:text-sm -text-gray font-normal">
           ${values[1].toFixed(0)}+
         </span>
       </output>

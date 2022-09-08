@@ -16,12 +16,15 @@ function CheckBoxWithTitle(props: Props) {
       <div className="mt-[.26em]">
         <Checkbox type="checkbox" name={props.name} id={props.id} />
       </div>
-      <label htmlFor={props.id} className="cursor-pointer -text-gray flex-1">
+      <label
+        htmlFor={props.id}
+        className="text-sm xl:text-base cursor-pointer -text-gray flex-1"
+      >
         {props.title}
       </label>
       {props.info ? (
         <div className="flex mt-[.26em]">
-          <GoInfo className="-text-gray text-lg" />
+          <GoInfo className="-text-gray text-base xl:text-lg" />
         </div>
       ) : null}
     </div>

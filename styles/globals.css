@@ -102,7 +102,7 @@
   }
 
   .TravelingOptions .cards .card-title {
-    @apply -text-gray text-lg font-bold mb-5;
+    @apply -text-gray text-base xl:text-lg font-bold mb-5;
   }
 }
 

@@ -5,6 +5,7 @@ import Navbar from "layouts/Navbar";
 import Partners from "layouts/Partners";
 import Questions from "layouts/Questions";
 import TravelingDetails from "layouts/TravelingDetails";
+import { useRouter } from "next/router";
 import React from "react";
 
 function Search() {

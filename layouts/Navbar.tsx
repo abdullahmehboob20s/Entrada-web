@@ -1,6 +1,6 @@
 import OutsideClickDetector from "hooks/OutsideClickDetector";
 import Link from "next/link";
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { IoCloseSharp, IoMenu } from "react-icons/io5";
 import { GoSearch } from "react-icons/go";
 import { useRouter } from "next/router";
@@ -14,7 +14,7 @@ function Navbar({ wrapperClassName, textColor = "lg:-text-black" }: Props) {
   const [sidebar, setSidebar] = useState(false);
   const sidebarRef = OutsideClickDetector(() => setSidebar(false));
   const router = useRouter();
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState(router.query.name);
 
   const search = (e: any) => {
     e.preventDefault();

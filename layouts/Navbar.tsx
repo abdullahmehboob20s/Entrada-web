@@ -83,7 +83,7 @@ function Navbar({ wrapperClassName, textColor = "-text-black" }: Props) {
           </div>
         </nav>
       </div>
-      <div className={`black-screen ${sidebar ? "show" : null}`}></div>
+      <div className={`black-screen z-[100] ${sidebar ? "show" : null}`}></div>
     </>
   );
 }

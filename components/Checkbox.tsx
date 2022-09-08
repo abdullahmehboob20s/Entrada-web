@@ -13,7 +13,7 @@ function Checkbox(props: Props) {
       type={type}
       name={name ? name : ""}
       id={id}
-      className="checkbox-input appearance-none w-3 xl:w-4 min-w-[12px] xl:min-w-[1rem] h-3 xl:h-4 bg-transparent border-2 -border-gray rounded cursor-pointer relative flex items-center justify-center"
+      className="checkbox-input appearance-none w-4 min-w-[1rem] h-4 bg-transparent border-2 -border-gray rounded cursor-pointer relative flex items-center justify-center"
     />
   );
 }

@@ -1,3 +1,4 @@
+import LabelAndInput from "components/LabelAndInput";
 import Image from "next/image";
 import React from "react";
 import { BsCalendar3 } from "react-icons/bs";
@@ -67,19 +68,18 @@ function PlanDetails() {
           </h4>
 
           <form className="grid gap-4">
-            <div className="relative">
-              <input
-                placeholder="Enter full name here."
-                className="text-sm text-black opacity-80 w-full h-full py-3 px-4 border-[1px] border-[#707070] rounded-md bg-white outline-none"
-              />
-              <BsCalendar3 className="text-black opacity-70 text-xl absolute top-1/2 -translate-y-1/2 right-4" />
-            </div>
-            <div className="relative">
-              <div className="text-sm text-black opacity-80 w-full h-full py-3 px-4 border-[1px] border-[#707070] rounded-md bg-white outline-none">
-                2 Adults
-              </div>
-              <HiOutlineUserGroup className="text-black opacity-70 text-xl absolute top-1/2 -translate-y-1/2 right-4" />
-            </div>
+            <LabelAndInput
+              placeholder="Enter full name here."
+              Icon={() => (
+                <BsCalendar3 className="text-black opacity-70 text-xl absolute top-1/2 -translate-y-1/2 right-4" />
+              )}
+            />
+            <LabelAndInput
+              placeholder="2 Adults"
+              Icon={() => (
+                <HiOutlineUserGroup className="text-black opacity-70 text-xl absolute top-1/2 -translate-y-1/2 right-4" />
+              )}
+            />
 
             <button
               type="submit"

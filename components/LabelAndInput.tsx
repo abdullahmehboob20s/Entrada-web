@@ -1,7 +1,7 @@
 import React from "react";
 
 interface Props {
-  label: string;
+  label?: string;
   placeholder: string;
   Icon?: any;
 }
@@ -9,7 +9,9 @@ interface Props {
 function LabelAndInput({ label, placeholder, Icon }: Props) {
   return (
     <div>
-      <h4 className="text-lg font-bold -text-blue-300 mb-2">{label}</h4>
+      {label ? (
+        <h4 className="text-lg font-bold -text-blue-300 mb-2">{label}</h4>
+      ) : null}
       <div className="relative bg-white rounded-md overflow-hidden border-[1px] border-[#707070]">
         <input
           placeholder={placeholder}

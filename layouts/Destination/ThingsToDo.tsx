@@ -6,13 +6,13 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 function ThingsToDo() {
   return (
     <div>
-      <div className="container mb-12">
+      <div className="container mb-6 md:mb-12">
         <LineTitleBar title="Things to do in Petrela" />
       </div>
 
-      <div className="py-16 -bg-yellow-200">
+      <div className="py-12 lg:py-16 -bg-yellow-200">
         <div className="container">
-          <div className="grid grid-cols-3 gap-8 mb-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8 mb-10 sm:mb-20">
             <TrendingCard img="images/trending-img-1.png" />
             <TrendingCard img="images/trending-img-2.png" />
             <TrendingCard img="images/trending-img-3.png" />

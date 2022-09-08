@@ -5,12 +5,14 @@ function Welcome() {
   return (
     <div className="">
       <div className="container">
-        <div className="relative w-fit mx-auto flex flex-col items-center space-y-6">
-          <h1 className="text-4xl font-bold text-center">Welcome to Petrela</h1>
+        <div className="relative w-fit mx-auto flex flex-col items-center space-y-4 lg:space-y-6">
+          <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-center">
+            Welcome to Petrela
+          </h1>
           <div className="w-[60%] h-[1px] -bg-gray rotate-[-2deg]"></div>
         </div>
 
-        <p className="text-lg 2xl:text-xl mx-auto max-w-[50em] mt-9 mb-20 -text-blue leading-[1.8] text-center">
+        <p className="text-xs xl:text-base 2xl:text-lg mx-auto xl:max-w-[60em] mt-6 lg:mt-9 mb-10 lg:mb-20 -text-blue leading-[1.8] text-center">
           Mexico conjures images of ancient ruins, colonial towns, endless
           beaches, and cities pulsing with life. The country’s two long
           coastlines lure travelers with countless opportunities for fun in the
@@ -37,7 +39,7 @@ function Welcome() {
           Teotihuacan pyramids.
         </p>
 
-        <div className="flex items-center justify-between space-x-8">
+        <div className="flex flex-wrap items-center justify-center xl:justify-between xl:space-x-8">
           <ActivityCard />
           <ActivityCard />
           <ActivityCard />

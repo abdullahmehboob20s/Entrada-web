@@ -17,7 +17,7 @@ function Hero() {
             - The Himalayan Mountain Ranges
           </h3>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-9xl font-bold text-white mb-12 lg:mb-16">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-12 lg:mb-16">
             Nepal Country
           </h1>
 

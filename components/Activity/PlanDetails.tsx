@@ -6,7 +6,7 @@ import { HiOutlineUserGroup } from "react-icons/hi";
 
 function PlanDetails() {
   return (
-    <div className="grid grid-cols-[14rem_1fr_.6fr] gap-4">
+    <div className="grid grid-cols-[14rem_1fr] grid-rows-[30rem_auto] xl:grid-rows-none xl:grid-cols-[14rem_1fr_.6fr] gap-4">
       <div className="gap-4 grid grid-rows-4">
         <div className="relative">
           <Image
@@ -50,7 +50,7 @@ function PlanDetails() {
           alt=""
         />
       </div>
-      <div className="">
+      <div className="col-span-2 xl:col-span-1">
         <div className="-text-yellow -bg-yellow-200 rounded-lg w-full p-2 text-center border-[1px] -border-yellow text-sm mb-4">
           Last Few Spots
         </div>
@@ -63,7 +63,7 @@ function PlanDetails() {
         </div>
 
         <div className="bg-[#F4F4F4] py-4 px-4 mb-4">
-          <h4 className="text-xl font-bold -text-blue mb-4">
+          <h4 className="text-lg xl:text-xl font-bold -text-blue mb-4">
             Select Date and Travelers
           </h4>
 
@@ -83,14 +83,14 @@ function PlanDetails() {
 
             <button
               type="submit"
-              className="w-full p-2 -bg-green rounded-md -text-yellow-200 text-base font-bold"
+              className="w-full p-2 -bg-green rounded-md -text-yellow-200 text-sm xl:text-base font-bold"
             >
               Check Availability
             </button>
           </form>
         </div>
 
-        <img src="images/map.png" alt="" />
+        <img src="images/map.png" className="w-full" alt="" />
       </div>
     </div>
   );

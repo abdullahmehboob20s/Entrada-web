@@ -17,9 +17,7 @@ const Item = (props: Item_Interface) => {
       ) : (
         <IoMdClose className="text-lg -text-blue" />
       )}
-      <p className="text-base font-normal leading-[1.7] -text-blue">
-        {props.title}
-      </p>
+      <p className="activity-text">{props.title}</p>
     </div>
   );
 };
@@ -27,13 +25,13 @@ const Item = (props: Item_Interface) => {
 function PlaceDetails() {
   return (
     <div>
-      <div className="container grid grid-cols-[1fr_.5fr] gap-10">
+      <div className="container PlaceDetails grid xl:grid-cols-[1fr_.5fr] gap-14 xl:gap-10">
         <div>
           <div className="mb-100px">
-            <div className="pb-12 mb-12 border-b-[1px] -border-blue">
-              <h1 className="text-2xl font-bold -text-blue mb-4">Overview</h1>
+            <div className="activity-divider">
+              <h1 className="activity-title">Overview</h1>
 
-              <p className="text-base font-normal leading-[1.7] -text-blue">
+              <p className="activity-text">
                 Explore the Rio Secreto Nature Reserve on this guided
                 multi-activity tour. Hike, bike, swim and rappel the massive
                 cavern in groups of 10, and enjoy an interactive experience
@@ -47,10 +45,10 @@ function PlaceDetails() {
               </p>
             </div>
 
-            <div className="pb-12 mb-12 border-b-[1px] -border-blue">
-              <h1 className="text-2xl font-bold -text-blue mb-4">Overview</h1>
+            <div className="activity-divider">
+              <h1 className="activity-title">Overview</h1>
 
-              <div className="grid grid-cols-3">
+              <div className="grid grid-cols-1 md:grid-cols-3">
                 <div>
                   <Item included={true} title="Food" />
                   <Item included={true} title="Transportation" />
@@ -63,38 +61,30 @@ function PlaceDetails() {
               </div>
             </div>
 
-            <div className="pb-12 mb-12 border-b-[1px] -border-blue">
+            <div className="activity-divider">
               <div className="mb-8">
-                <h1 className="text-2xl font-bold -text-blue mb-4">
-                  Meeting And Pickup
-                </h1>
-                <p className="text-base font-normal leading-[1.7] -text-blue">
+                <h1 className="activity-title">Meeting And Pickup</h1>
+                <p className="activity-text">
                   You can head directly to the meeting point, or request pickup
                 </p>
               </div>
               <div className="mb-8">
-                <h1 className="text-2xl font-bold -text-blue mb-4">
-                  Meeting point
-                </h1>
-                <p className="text-base font-normal leading-[1.7] -text-blue">
+                <h1 className="activity-title">Meeting point</h1>
+                <p className="activity-text">
                   You can head directly to the meeting point, or request pickup
                 </p>
               </div>
               <div>
-                <h1 className="text-2xl font-bold -text-blue mb-4">
-                  More Information
-                </h1>
-                <p className="text-base font-normal leading-[1.7] -text-blue">
+                <h1 className="activity-title">More Information</h1>
+                <p className="activity-text">
                   You can head directly to the meeting point, or request pickup
                 </p>
               </div>
             </div>
 
-            <div className="pb-12 mb-12 border-b-[1px] -border-blue">
-              <h1 className="text-2xl font-bold -text-blue mb-4">
-                What To Expect
-              </h1>
-              <p className="text-base font-normal leading-[1.7] -text-blue">
+            <div className="activity-divider">
+              <h1 className="activity-title">What To Expect</h1>
+              <p className="activity-text">
                 Explore the Rio Secreto Nature Reserve on this guided
                 multi-activity tour. Hike, bike, swim and rappel the massive
                 cavern in groups of 10, and enjoy an interactive experience
@@ -109,10 +99,8 @@ function PlaceDetails() {
             </div>
 
             <div>
-              <h1 className="text-2xl font-bold -text-blue mb-4">
-                Cancellation Policy
-              </h1>
-              <p className="text-base font-normal leading-[1.7] -text-blue">
+              <h1 className="activity-title">Cancellation Policy</h1>
+              <p className="activity-text">
                 Explore the Rio Secreto Nature Reserve on this guided
                 multi-activity tour. Hike, bike, swim and rappel the massive
                 cavern in groups of 10, and enjoy an interactive experience

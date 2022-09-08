@@ -25,7 +25,7 @@ function ReviewCard() {
         </div>
 
         <div className="mb-12">
-          <p className="text-base font-normal leading-[1.7] -text-blue max-w-[40em]">
+          <p className="activity-text max-w-[40em]">
             My favorite part of the trip was going to this cave with the best
             tour guide Driss. I enjoy every minute and learn a lot through out.
           </p>

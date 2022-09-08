@@ -17,7 +17,7 @@ function Activity() {
       </div>
       <div className="mb-7">
         <div className="container">
-          <h1 className="text-4xl font-bold -text-blue-300">
+          <h1 className="text-3xl xl:text-4xl font-bold -text-blue-300">
             A secret river adventures tour. Explore the nature wonders of the
             Riviera Maya
           </h1>

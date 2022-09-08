@@ -15,7 +15,7 @@ function LabelAndInput({ label, placeholder, Icon }: Props) {
       <div className="relative bg-white rounded-md overflow-hidden border-[1px] border-[#707070]">
         <input
           placeholder={placeholder}
-          className="text-sm text-black opacity-80 w-full h-full py-3 px-4 bbg-white outline-none"
+          className="text-sm text-black opacity-80 w-full h-full py-[0.6rem] xl:py-3 px-4 bbg-white outline-none"
         />
 
         {Icon && <Icon />}

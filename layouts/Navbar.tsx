@@ -14,16 +14,20 @@ function Navbar({ wrapperClassName, textColor = "lg:-text-black" }: Props) {
   const [sidebar, setSidebar] = useState(false);
   const sidebarRef = OutsideClickDetector(() => setSidebar(false));
   const router = useRouter();
-  const inputElement = useRef();
+  const [searchValue, setSearchValue] = useState("");
 
-  const sendTo = (e: any, href: string) => {
-    router.push(href);
+  const search = (e: any) => {
+    e.preventDefault();
+    router.push({
+      pathname: "/search",
+      query: { name: searchValue },
+    });
   };
 
   return (
     <>
       <div className={wrapperClassName}>
-        <nav className="container py-4 sm:py-6 2xl:py-10 flex items-center justify-between space-x-[50px] lg:space-x-16 xl:space-x-[120px]">
+        <nav className="container py-4 sm:py-6 flex items-center justify-between space-x-[50px] lg:space-x-16 xl:space-x-[120px]">
           <div className="flex items-center">
             <Link href="/">
               <a className={`text-2xl md:text-2xl font-semibold ${textColor}`}>
@@ -78,21 +82,32 @@ function Navbar({ wrapperClassName, textColor = "lg:-text-black" }: Props) {
                 </a>
               </Link>
 
-              <div className="flex-auto lg:flex-1 items-center justify-center flex">
+              <form
+                onSubmit={search}
+                className="flex-auto lg:flex-1 items-center justify-center flex bg-transparent"
+              >
                 <div className="w-full lg:w-[70%] relative mt-6 lg:mt-0">
                   <input
                     type="text"
-                    className={`w-full h-full py-1 px-2 rounded-md pr-10 text-xs xl:text-sm outline-none border-[1px] border-[#E5E5E5] ${textColor}`}
                     placeholder="Search for “Shengjergj” or “Petrela”"
-                    onClick={(e) => sendTo(e, "/search")}
-                    // ref={inputElement}
+                    value={searchValue}
+                    onChange={(e) => setSearchValue(e.target.value)}
+                    className={`w-full h-full py-1 px-2 rounded-md pr-10 text-xs xl:text-sm outline-none border-[1px]  border-[#E5E5E5] ${
+                      textColor === "text-white"
+                        ? "bg-white lg:bg-transparent -text-black lg:text-white"
+                        : "bg-white"
+                    }`}
                   />
 
                   <GoSearch
-                    className={`${textColor} text-base absolute top-1/2 -translate-y-1/2 right-3 pointer-events-none`}
+                    className={`${
+                      textColor === "text-white"
+                        ? "-text-black lg:text-white"
+                        : textColor
+                    } text-base absolute top-1/2 -translate-y-1/2 right-3 pointer-events-none`}
                   />
                 </div>
-              </div>
+              </form>
             </div>
             <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:items-center lg:space-x-[24px]">
               <button

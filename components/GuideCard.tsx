@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface Props {
@@ -9,11 +10,15 @@ interface Props {
 function GuideCard(props: Props) {
   return (
     <div className="flex items-center space-x-4">
-      <img
-        src="images/guide-person.png"
-        className="w-[4rem] sm:w-20 xl:w-24"
-        alt=""
-      />
+      <div className="relative w-[4rem] h-[4rem] sm:w-20 sm:h-20 xl:w-24 xl:h-24 rounded-full">
+        <Image
+          layout="fill"
+          src="/images/guide-person.png"
+          loading="lazy"
+          objectFit="fill"
+          alt=""
+        />
+      </div>
       <div>
         <h1 className="text-underline text-sm sm:text-base xl:text-xl font-medium -text-blue-300 mb-2">
           {props.name}

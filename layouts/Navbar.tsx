@@ -64,7 +64,7 @@ function Navbar({ wrapperClassName, textColor = "-text-black" }: Props) {
                   Bookings
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/activity">
                 <a
                   className={`w-fit text-base md:text-sm 2xl:text-xl font-medium ${textColor}`}
                 >

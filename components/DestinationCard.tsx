@@ -25,17 +25,17 @@ function DestinationCard(props: Props) {
       <Badge
         title="3.5"
         position={{
-          top: "top-5 2xl:top-8",
-          left: "left-5 2xl:left-8",
+          top: "top-5",
+          left: "left-5",
           right: "right-[unset]",
         }}
       />
 
       <div>
-        <h2 className="text-base lg:text-lg 2xl:text-2xl text-white font-medium mb-1">
+        <h2 className="text-base lg:text-lg text-white font-medium mb-1">
           {props.title}
         </h2>
-        <p className="text-[10px] lg:text-xs 2xl:text-base text-white font-normal">
+        <p className="text-[10px] lg:text-xs text-white font-normal">
           {props.subtitle}
         </p>
       </div>

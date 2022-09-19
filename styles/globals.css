@@ -42,7 +42,7 @@
   .hero-selector-cards {
     --spacing: 40px;
 
-    @apply py-5 px-8 sm:px-8 xl:py-8 xl:px-14 gap-[1.6rem] lg:gap-[var(--spacing)] 2xl:py-12 2xl:px-[72px] bg-white rounded-[1rem] grid grid-cols-[1fr] md:grid-cols-[1fr_1fr_.5fr_.3fr] lg:grid-cols-[1fr_.8fr_.4fr_.3fr] shadow-[0_35px_70px_-15px_rgba(0,0,0,0.2)];
+    @apply py-5 px-8 sm:px-8 xl:py-8 xl:px-14 gap-[1.6rem] lg:gap-[var(--spacing)] bg-white rounded-[1rem] grid grid-cols-[1fr] md:grid-cols-[1fr_1fr_.5fr_.3fr] lg:grid-cols-[1fr_.8fr_.4fr_.3fr] shadow-[0_35px_70px_-15px_rgba(0,0,0,0.2)];
   }
 
   .hero-selector-cards > :nth-child(1),

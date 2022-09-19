@@ -11,7 +11,7 @@ function Trending() {
   return (
     <div>
       <div className="container">
-        <div className="mb-8 sm:mb-12 2xl:mb-16">
+        <div className="mb-8 sm:mb-12">
           <Bar
             prevButton={prevRef}
             nextButton={nextRef}

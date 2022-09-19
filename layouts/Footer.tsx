@@ -18,19 +18,19 @@ function Footer() {
           <FooterLocations />
         </div>
 
-        <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] 2xl:grid-cols-[1fr_minmax(1fr,648px)] justify-between gap-[70px] lg:gap-[100px] xl:gap-[200px] mb-16 md:mb-100px">
+        <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] justify-between gap-[70px] lg:gap-[100px] xl:gap-[200px] mb-16 md:mb-100px">
           <FooterLinks />
 
           <div className="w-full max-w-[24rem] md:max-w-none">
-            <h4 className="text-sm xl:text-lg 2xl:text-2xl font-medium -text-blue-300 mb-4 leading-[1]">
+            <h4 className="text-sm xl:text-lg  font-medium -text-blue-300 mb-4 leading-[1]">
               Get In Touch
             </h4>
 
             <div className="mb-[40px] flex items-center space-x-6">
-              <h1 className="text-2xl xl:text-[30px] 2xl:text-[40px] font-semibold -text-blue-300 leading-[1]">
+              <h1 className="text-2xl xl:text-[30px] font-semibold -text-blue-300 leading-[1]">
                 Let’s Talk
               </h1>
-              <span className="-text-blue-300 text-2xl xl:text-3xl 2xl:text-5xl">
+              <span className="-text-blue-300 text-2xl xl:text-3xl">
                 <HiOutlineArrowNarrowRight />
               </span>
             </div>
@@ -40,11 +40,11 @@ function Footer() {
         </div>
 
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 items-center justify-between border-b-2 border-[rgba(112,112,112,0.26)] pb-6">
-          <p className="text-sm md:text-base xl:text-lg 2xl:text-2xl font-medium -text-blue-300">
+          <p className="text-sm md:text-base xl:text-lg  font-medium -text-blue-300">
             Privacy Policy
           </p>
 
-          <div className="flex items-center space-x-[1em] text-xs md:text-sm xl:text-base 2xl:text-2xl -text-blue-300 font-medium">
+          <div className="flex items-center space-x-[1em] text-xs md:text-sm xl:text-base  -text-blue-300 font-medium">
             <Link href="/">
               <a target="_blank">Linkedin</a>
             </Link>{" "}
@@ -66,7 +66,7 @@ function Footer() {
 
           <img
             src="images/payment-methods.png"
-            className="w-full max-w-[150px] sm:max-w-[180px] md:max-w-[220px] xl:max-w-[250px] 2xl:max-w-[294px]"
+            className="w-full max-w-[150px] sm:max-w-[180px] md:max-w-[220px] xl:max-w-[250px]"
             alt=""
           />
         </div>

@@ -11,12 +11,12 @@ function SubscribeForm() {
         <input
           type="text"
           placeholder="Enter your email"
-          className="text-xs md:text-sm xl:text-base -text-blue font-normal border-none outline-none bg-white w-full h-full py-4 xl:py-[26px] 2xl:py-[32px] px-6 pl-[22%] md:pl-[18%]"
+          className="text-xs md:text-sm xl:text-base -text-blue font-normal border-none outline-none bg-white w-full h-full py-4 xl:py-[26px] px-6 pl-[22%] md:pl-[18%]"
         />
       </div>
       <button
         type="submit"
-        className="-bg-green text-white text-xs md:text-sm xl:text-lg 2xl:text-2xl font-medium px-6 xl:px-8"
+        className="-bg-green text-white text-xs md:text-sm xl:text-lg  font-medium px-6 xl:px-8"
       >
         Send Now!
       </button>

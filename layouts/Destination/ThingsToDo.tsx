@@ -25,10 +25,10 @@ function ThingsToDo() {
           </div>
 
           <div className="flex space-x-4 justify-center items-center flex-row">
-            <button className="w-[36px] h-[36px] xl:w-[50px] xl:h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-blue flex items-center justify-center text-2xl 2xl:text-3xl -text-blue">
+            <button className="w-[36px] h-[36px] xl:w-[50px] xl:h-[50px] rounded-full border-2 -border-blue flex items-center justify-center text-2xl -text-blue">
               <MdKeyboardArrowLeft />
             </button>
-            <button className="w-[36px] h-[36px] xl:w-[50px] xl:h-[50px] 2xl:w-[72px] 2xl:h-[72px] rounded-full border-2 -border-green flex items-center justify-center text-2xl 2xl:text-3xl text-white -bg-green">
+            <button className="w-[36px] h-[36px] xl:w-[50px] xl:h-[50px] rounded-full border-2 -border-green flex items-center justify-center text-2xl text-white -bg-green">
               <MdKeyboardArrowRight />
             </button>
           </div>

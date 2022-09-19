@@ -5,7 +5,7 @@ import React from "react";
 const CheckAll = () => {
   return (
     <div>
-      <button className="-bg-green rounded-full text-white py-2 px-4 xl:py-3 xl:px-6 2xl:py-6 2xl:px-10 text-xs sm:text-sm xl:text-base 2xl:text-2xl font-normal">
+      <button className="-bg-green rounded-full text-white py-2 px-4 xl:py-3 xl:px-6 text-xs sm:text-sm xl:text-base  font-normal">
         Check All
       </button>
     </div>
@@ -16,7 +16,7 @@ function BestSeller() {
   return (
     <div>
       <div className="container">
-        <div className="mb-8 md:mb-12 2xl:mb-16">
+        <div className="mb-8 md:mb-12">
           <Bar
             title="Best Seller"
             subtitle="Sost Brilliant reasons Entrada should be your one-stop-shop!"

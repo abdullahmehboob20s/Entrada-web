@@ -12,7 +12,7 @@ function Welcome() {
           <div className="w-[60%] h-[1px] -bg-gray rotate-[-2deg]"></div>
         </div>
 
-        <p className="text-xs xl:text-base 2xl:text-lg mx-auto xl:max-w-[60em] mt-6 lg:mt-9 mb-10 lg:mb-20 -text-blue leading-[1.8] text-center">
+        <p className="text-xs xl:text-base mx-auto xl:max-w-[60em] mt-6 lg:mt-9 mb-10 lg:mb-20 -text-blue leading-[1.8] text-center">
           Mexico conjures images of ancient ruins, colonial towns, endless
           beaches, and cities pulsing with life. The country’s two long
           coastlines lure travelers with countless opportunities for fun in the

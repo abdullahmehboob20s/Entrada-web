@@ -17,21 +17,21 @@ function Subscribe() {
 
           <div className="flex-1 max-w-[26rem] sm:max-w-none">
             <div className="mb-10 xl:mb-16">
-              <h5 className="font-normal text-sm xl:text-lg 2xl:text-2xl -text-green mb-2">
+              <h5 className="font-normal text-sm xl:text-lg  -text-green mb-2">
                 Subscribe For Offers
               </h5>
-              <h1 className="font-semibold -text-blue-300 text-2xl xl:text-4xl 2xl:text-5xl leading-[1.2] mb-6">
+              <h1 className="font-semibold -text-blue-300 text-2xl xl:text-4xl  leading-[1.2] mb-6">
                 Adventures Calling You Guys!
               </h1>
 
-              <h4 className="text-sm xl:text-lg 2xl:text-2xl font-normal -text-blue ">
+              <h4 className="text-sm xl:text-lg  font-normal -text-blue ">
                 The Brilliant reasons Entrada should be your one-stop-shop!
               </h4>
             </div>
 
             <SubscribeForm />
 
-            <p className="text-gray-400 text-xs xl:text-sm 2xl:text-base font-normal">
+            <p className="text-gray-400 text-xs xl:text-sm  font-normal">
               Expect a reply in 2-3 working days
             </p>
           </div>

@@ -6,10 +6,10 @@ function Questions() {
     <div>
       <div className="container">
         <div className="mb-8 sm:mb-12 md:mb-16">
-          <h1 className="text-center font-bold text-2xl xl:text-[30px] 2xl:text-[40px] mb-4">
+          <h1 className="text-center font-bold text-2xl xl:text-[30px] mb-4">
             Still have a question?
           </h1>
-          <p className="text-center -text-blue text-sm xl:text-lg 2xl:text-2xl font-medium">
+          <p className="text-center -text-blue text-sm xl:text-lg  font-medium">
             The Brilliant reasons Entrada should be your one-stop-shop!
           </p>
         </div>

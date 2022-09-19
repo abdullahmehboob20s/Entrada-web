@@ -14,10 +14,10 @@ function CategoryCard(props: Props) {
 
       <Badge title="4.2" />
 
-      <h5 className="text-base lg:text-lg 2xl:text-2xl -text-blue-300 mb-2 2xl:mb-4 font-medium">
+      <h5 className="text-base lg:text-lg -text-blue-300 mb-2 font-medium">
         {props.title}
       </h5>
-      <p className="text-xs lg:text-sm 2xl:text-base -text-blue font-normal">
+      <p className="text-xs lg:text-sm -text-blue font-normal">
         {props.subtitle}
       </p>
     </div>

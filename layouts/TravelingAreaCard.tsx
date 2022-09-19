@@ -14,12 +14,12 @@ function TravelingAreaCard() {
       <div className="flex-1 flex flex-col justify-center">
         <div className="mb-4 md:mb-8 flex flex-col xl:flex-row space-y-5 xl:space-y-0">
           <div className="xl:w-[70%]">
-            <h2 className="text-base xl:text-lg 2xl:text-xl font-bold -text-blue-300 mb-4">
+            <h2 className="text-base xl:text-lg  font-bold -text-blue-300 mb-4">
               A secret river adventures tour. Explore the nature wonders of the
               Riviera Maya
             </h2>
 
-            <p className="text-xs xl:text-sm 2xl:text-base -text-gray leading-[1.6]">
+            <p className="text-xs xl:text-sm  -text-gray leading-[1.6]">
               Explore the Rio Secreto Nature Reserve on this guided
               multi-activity tour. Hike, bike, swim and rappel the massive
               cavern in groups of 10, and enjoy an interactive experience inside
@@ -29,12 +29,8 @@ function TravelingAreaCard() {
           </div>
           <div className="flex-1">
             <div className="flex flex-row xl:flex-col items-center xl:items-end justify-between xl:justify-start">
-              <p className="text-xs 2xl:text-sm -text-gray font-normal text-right">
-                from
-              </p>
-              <p className="text-base 2xl:text-xl font-bold text-right">
-                $119.00
-              </p>
+              <p className="text-xs -text-gray font-normal text-right">from</p>
+              <p className="text-base  font-bold text-right">$119.00</p>
             </div>
           </div>
         </div>

@@ -25,24 +25,24 @@ function DestinationCard(props: Props) {
 
         <Badge title="3.5" />
 
-        <p className="text-xs xl:text-base 2xl:text-lg text-white font-regular mb-3 xl:mb-4">
+        <p className="text-xs xl:text-base text-white font-regular mb-3 xl:mb-4">
           10 Days | 09 Night
         </p>
 
         <div className="flex items-center justify-between">
           <div className="w-fit relative">
-            <h2 className="w-fit text-lg xl:text-2xl 2xl:text-[32px] 2xl:text-2xl text-white font-semibold mb-1">
+            <h2 className="w-fit text-lg xl:text-2xl text-white font-semibold mb-1">
               $895.50
             </h2>
             <div className="absolute bottom-0 left-0 w-full h-[3px] bg-white"></div>
           </div>
 
           <div className="flex items-center space-x-3">
-            <button className="flex items-center justify-center rounded-full w-[26px] xl:w-[36px] 2xl:w-[48px] h-[26px] xl:h-[36px] 2xl:h-[48px] bg-white text-sm xl:text-lg 2xl:text-xl">
+            <button className="flex items-center justify-center rounded-full w-[26px] xl:w-[36px] h-[26px] xl:h-[36px] bg-white text-sm xl:text-lg ">
               <MdShare />
             </button>
 
-            <button className="text-[10px] xl:text-sm 2xl:text-lg text-white font-normal py-[6px] xl:py-[8px] px-3 xl:px-5 2xl:py-[12px] 2xl:px-6 -bg-green rounded-full">
+            <button className="text-[10px] xl:text-sm text-white font-normal py-[6px] xl:py-[8px] px-3 xl:px-5 -bg-green rounded-full">
               Explore
             </button>
           </div>
@@ -50,10 +50,10 @@ function DestinationCard(props: Props) {
       </div>
 
       <div className="text-center">
-        <h4 className="text-base xl:text-lg 2xl:text-2xl text-center font-medium -text-blue-300 mb-2 xl:mb-3">
+        <h4 className="text-base xl:text-lg text-center font-medium -text-blue-300 mb-2 xl:mb-3">
           {props.title}
         </h4>
-        <p className="text-center -text-blue text-xs xl:text-sm 2xl:text-base font-normal leading-[1.7] max-w-[24em]">
+        <p className="text-center -text-blue text-xs xl:text-sm font-normal leading-[1.7] max-w-[24em]">
           {props.subtitle}
         </p>
       </div>

@@ -12,7 +12,7 @@ function TourGuide() {
   return (
     <div>
       <div className="container">
-        <div className="mb-8 md:mb-12 2xl:mb-16">
+        <div className="mb-8 md:mb-12 ">
           <Bar
             title="Tour Guides"
             subtitle="Sost Brilliant reasons Entrada should be your one-stop-shop!"

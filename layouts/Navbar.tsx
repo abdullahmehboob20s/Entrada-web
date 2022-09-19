@@ -111,11 +111,11 @@ function Navbar({ wrapperClassName, textColor = "lg:-text-black" }: Props) {
             </div>
             <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:items-center lg:space-x-[24px]">
               <button
-                className={`text-sm 2xl:text-xl font-normal bg-white py-2 rounded-md lg:bg-transparent lg:py-0 text-black lg:${textColor}`}
+                className={`text-sm  font-normal bg-white py-2 rounded-md lg:bg-transparent lg:py-0 text-black lg:${textColor}`}
               >
                 Log in
               </button>
-              <button className="text-inherit lg:text-white text-sm 2xl:text-xl font-normal py-2 lg:py-[0.4rem] px-4 lg:px-4 bg-white lg:-bg-green rounded-md lg:rounded-[10rem]">
+              <button className="text-inherit lg:text-white text-sm  font-normal py-2 lg:py-[0.4rem] px-4 lg:px-4 bg-white lg:-bg-green rounded-md lg:rounded-[10rem]">
                 Sign up
               </button>
             </div>
